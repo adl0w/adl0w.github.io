@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adlow.online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+      <header>
+            <h1>adlow.online <img src="assets/washing_machine_lf40_washing_md_wht.gif" id="image" alt="" width="90" ></h1>
+			<h3 style="font-style: normal; margin-top: -1rem;"></h3>
+
+          
+        <nav>
+            <ul>
+					<li><a href="index.html">main</a></li>
+                   
+      </ul>
+        </nav>
+        </header>
+        
+       
+        
+      <section id="hardware">
+        <h2><a href="theta-Z.html">(θ,z) Crosstalk Echo - 2025</a></h2>
+            <h3>desc</h3>
+		  
+		  	<p>The θ,z is a dual axis tape loop player, which diverges from traditional . Implied by its name, the user has control over the rotation direction and speed (θ), and the position of the playhead orthogonal to the direction of rotation (z). A foot of 2" magnetic tape is looped between two spindles and held under tension, driven by a pwm controlled DC motor, belt and gear transport. The magnetic play/record head is mounted on the underside of the playarm. The playarm is moved perpendicularly across the tape, using a stepper motor controlled lead screw assembly, similarly to the function of most CNC machines or 3D printers. With a 0.1" track width on a standard mono playhead, minus the travel distance, there are ~16 discrete tracks available to the user, with incredibly fine control over the heads position between adjacent tracks.</p>
+		 	
+		  	<h3>dev</h3>
+		  	<p>The inspiration for this project came during some of my experiments with a handhed walkman conversion, which I used as a stylus on strips of 2" magnetic tape. The strips contained samples of voice and drums, recorded monophonically across all 16 tracks on a 2" reel-to-reel machine. With the tape and playhead divorced from its rigid, linear system, I was able to explore the relationship between sound and speed and head orientation, getting a much more organic and intuitive sense of the way audio is imprinted into the magnetic flux of the tape, and how that information is retrieved. With the entire playback system replaced by my motor cortex, I began to wonder if there was more I could get out of this system, if information could be meaningfully encoded in both dimensions of the magnetic tape, and played back with the same fluidity. This was also somewhat influecned by experiments in VR and AR recroding, where samples are granularly recorded in the 3D space around the user, and played back the same way they were recorded. Finding VR somewhat nauseating, but the concept interesting, I hoped to </p>
+	    	<p>From here I began to sketch a standalone device that became (θ,z), with bidirectional control of the tapes position along its length, its rotation, as well as the position of a smaller playhead perpendicularly to that axis. The device in its essential form came to me almost immediately. Taking inspiration from 3D printers and tape echoes, the simplest form of this device would make use of mechanical solutions that were already tried and true. To keep the 'canvas' of tape as freeform as possible, it would have to be a complete loop, as having to worry about winding and rewinding would both require a larger machine (and much more torque) and stifle the creativity of the end user. As for the playhead, linear lead screw actuators for industrial applications are already widely available in a variety of sizes and specs. But keeping the rotation and head contact consistent ~enough~ for meaningful recording and playback would require unique solutions with a level of precision I had yet to attempt.</p>
+		  	<p>From the many tape decks, printers, and other devices I have repaired or scrapped for parts in recent years, I had a number of mechanical parts that would find their way into this first protoype. The motor, belt/flywheel, drive gear, tape play/record circuit, and playhead were all scavaged from existing devices, as well as the 21V PSU, which was given up in the final useful act of a frustrated printer. The linear actuator, with a 50mm (~2") travel distance, would have to be purchased, as well as the spindles to hold the loop, springs, and any parts that would make up the housing and structure for the drivetrain and tape path. The first iteration of the device was constructed using Erector set parts, many of which made it into the following prototype, having a significant influence on the design, mostly in terms of dimensions and aesthetic. For the rotating components, a much more stable material than punched sheets of steel would be required. Like many smaller recorders, I opted for a plastic. It would have to be something with a very low friction coeffecient, and high material strength. This ruled out acrylic, which was unfortunate as I had wanted the device to be somewhat transparent, to give as much visual stimulation to an end user as possible. Given that this was intened less as a hi-fidelity recording device, and more as an experimental instrument, it was significant to me that an operator would have an intuitive sense of what was going on, with some kind of feedback given to the user. With the as much of the tape canvas open to the user as they would have on a pen and paper, it would be best if there was a clearer way to visualize exactly what they were recording and where. This felt especially important as magnetic tape is not a medium they leaves any sort of visual trace when used. This was the influence on a number of features that I ended up not having time to implement. The fully see-through enclosure being one of them. For structure and aesthetics, it seemed best if the enclosure was wooden, or something similar, but a plastic would still be required to hold the spindles and gears. I opted for UHMW polyethylene, because of its strength and low friction properties, it seemed a good medium-cost material that would give me the poperties I was looking for. </p>
+		    <p>Given the short timeframe on this project, I would have to forgo a custom PCB and circuit to drive the mechanism, instead opting to assemble the circuit piecemeal from widely available boards. The stepper motor and DC motor would be driven by an A4988 and ___ board respectively, with 2 DC/Dc buck converter components to get the neccesary voltages for the player/recorder, arduino, and motor from the voltage driving the stepper motor. This layout is visible in the block diagram below.</p>
+		  
+		  <p>Given what i was trying to accomplish, there was really only one form that made sense to me, with the loop horizontal parallel to the surface, visible from the top of the player. the rest of the components had a natural place in the device, the playhead would have to be on one side to move across its width, and the drive train on the other end where there was enough room. In the design stage, i already expected that the tensioning of the tape loop would be a large factor in the reliablilty of the device, and consistency in its playback. In this iteration, I decided that the simplest solution would be to spring load the roller underneath the playhead, with a pinch roller mounted on the opposite end. My thought was that this would not be affected by the direction of rotation, as the princh roller would apply a force in the same direction as rotation, and I wanted there to be no difference in tension if the direction of the tape was changed. </p>
+<img src="assets/sketch2.png" width="200">
+		  	<img src="assets/sketch1.png" width="200">
+		 	<h3>whats next</h3>
+            
+        <p>&nbsp;</p>
+           
+      </section>
+        
+        <footer>
+          <p>&copy; 2025 Aidan Loseke</p>
+  </footer>
+</div>
+</body>
+</html>
+
