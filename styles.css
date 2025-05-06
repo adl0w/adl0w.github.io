@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    text-align: left;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    padding: 0;
+    ;
+    margin-top: 0px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 1rem;
+	
+
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header {
+    border-bottom: 2px dashed black;
+  
+    margin-bottom: 20px;
+    margin-top: -15px;
+	background: white;
+	margin-left: 1rem;
+    
+
+}
+
+
+header h1 #image {
+    padding-left: 1rem;
+    margin-bottom: -4rem;
+    position: absolute;
+    right: 3rem;
+    background: white;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 3px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+}
+
+nav ul li a:hover {
+	text-decoration: none;
+	padding: 3px;
+    border: 2px solid black;
+    border-radius: 3px;
+
+}
+
+section {
+    margin-bottom: 3rem auto;
+    padding-right: 5rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    background: white;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    margin-right: 6rem;
+}
+#main section {
+    display: flex;
+}
+
+.container  .subhead {
+    width: 46%;
+    padding-left: 1rem;
+    align-self: flex-end;
+    padding-bottom: 0.2rem;
+   
+
+}
+
+
+table {
+    width: 100%;
+    border-style: double;
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+    margin-right: -123px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #000000;
+    color: white;
+}
+a:link {
+    text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: underline;
+}
+
+footer {
+    margin-top: 20px;
+    border-top: 2px solid black;
+    padding-top: 10px;
+}
+.image {
+    display: inline;
+
+}
+.container h3 {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+
+}
+
+.container #about{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.break {
+	flex-basis: 100%;
+	width: 100%;
+	height: 0;
+}
+.container #about p{
+    display: inline;
+    flex-basis: 80%;
+	
+}
+.container #about img{
+    border: 3px double black;
+    padding: 3px;
+    margin-left: auto;
+	
+}
+nav ul li {
+}
+.heading {
+
+}
+table tr td {
+    vertical-align: top;
+
+
+}
+td p img {
+}
+#flyers tr td img {
+    width: 98%;
+}
+#flyers table tr {
+    display: flex;
+    align-items: center;
+}
