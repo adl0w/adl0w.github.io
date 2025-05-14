@@ -27,19 +27,73 @@
 		
 			  
         <h2><a href="theta-Z.html">(θ,z) Crosstalk Echo - 2025</a></h2>
-		<div id="descbox">
-			<img src="assets/magnemonium.png" width="40%" alt="">
-			<div id="textbox">
-				<h3>desc</h3>
-			  <p>(θ,z) is an experimental magnetic tape loop player designed for freeform exploration through dual-axis control. In a departure from traditional tape players and recorders, of which virtually all are linear, this device enables users to navigate bidirectionally across both rotational (θ) and perpendicular (z) axes of a loop of 2” tape. </p>
-				<p>This allows recording and manupulation of sound through uniquely non-linear, intuitive methods using a joystick and single rec/play switch. Computer controlled motors and actuators give the user tactile access to the multidimensional possibilities of magnetic recording, which is territory typically reserved for the black box processes of hard drives and floppy disks.&</p>
-            </div>
-            
+		<div id="pager">
+			<div class="descbox">
+				<img src="assets/mag dither.png" height="auto" alt="">
+				<div class="textbox">
+					<h3>desc</h3>
+				  <p>(θ,z) is an experimental magnetic tape loop player designed for freeform exploration through dual-axis control. In a departure from traditional tape players and recorders, of which virtually all are linear, this device enables users to navigate bidirectionally across both rotational (θ) and perpendicular (z) axes of a loop of 2” tape. </p>
+					<p>This allows recording and manupulation of sound through uniquely non-linear, intuitive methods using a joystick and single rec/play switch. Computer controlled motors and actuators give the user tactile access to the multidimensional possibilities of magnetic recording, which is territory typically reserved for the black box processes of hard drives and floppy disks.</p>
+				</div>
+
+
+			</div>
+			<div class="descbox">
+				<div class="textbox">
+					<h3>mechanisms + tape path</h3>
+				  <p>The device is centered around the two given axes of motion, across which the position of the playhead and tape underneath it are controlled. The position of the play/record head orthogonal to the axis of rotation is determined by a stepper-driven lead screw assembly, which takes computer input to transfer the stepper motor’s rotation to linear movement. The playhead is simply mounted to the actuator on the underside of a custom arm.</p> <p> The rotation of the tape is controlled via a bidirectional motor, coupled to a belt and gear assembly which directly drives the left-most spindle. Taking notes from traditional tape player design, this spindle functions as the capstan, which is responsible for transferring most of the torque onto the tape. To prevent slippage, the capstan is coupled with a ‘pinch roller’, a rubber roller which is held in tension against the capstan, with the tape between the two. The right-most spindle, which rests just underneath the playhead, is free-rolling, with its shaft resting in a slot, allowing for adjustments in the distance between the two spindles; this system keeps the tape loop under tension. This system is visible in the sketch to the right. 
+					</p>
+				</div>
+				<div class="textbox">
+					<img src="assets/sketch2.png"  width="58%"  alt="">
+					<img src="assets/sketch1.png"  width="58%"  alt="">
+				</div>
+
+			</div>
+			<div class="descbox">
+				<img src="assets/mag dither.png" width="55%" alt="">
+				<div class="textbox">
+					<h3>electronics</h3>
+				  <p>Virtually all of the circuitry for this project was assembled piecemeal from off the shelf boards. Control is handled by an Arduino Uno, driving both the linear actuator (via an A4988 driver) and the DC motor (via a PWM H-bridge). The system is powered by a reclaimed 21V PSU, stepped down through DC-DC converters for the various subsystems. The playback and recording circuit is borrowed from a Radio Shack walkman clone, with its manual record switch actuated by a servo motor, (which is the part I am least proud of)</p>
+					
+				</div>
+
+
+			</div>
+			<div class="descbox">
+				<div class="textbox">
+					<h3>construction + assembly</h3>
+				  <p>
+The first prototype/proof-of-concept was constructed using entirely salvaged tape recorder parts, an erector set, and bare bones electronics. This largely worked as far as demonstrating the basic functionality, but the tape transport would require substantially more precision to make passable recordings. For the next iteration, I chose to mount the spindles, the belt flywheel and drive gear, as well as the motor in a pair of 5mm thick plastic walls. It was important to get the right kind of plastic, opting for UHMW polyethylene for its resilience and low friction. Much of the structure in this version is still reliant on the erector set system, which provides *just enough* stability for functionality.
+The enclosure in constructed out of 5 panels of high density pegboard, with holes left for the tape path and controls.
+</p>
+			  </div>
+				<img src="assets/mag dither.png" width="50%" alt="">
+
+			</div>
 			
+			<div class="descbox">
+				<img src="assets/mag dither.png" width="50%" alt="">
+				<div class="textbox">
+					<h3>failures</h3>
+				  <p>Because of my time constraints and other obligations for the semester, I was unable to execute this project with the precision and stability it demanded. A baseplate (and potentially outer enclosure) manufactured from machined steel or aluminum, with mounting brackets and more stability in the walls would fix many of the limitations of recording. The Flutter and Wow are bad, and the recording circuitry is not geared towards fidelity in the first place, meaning that the final quality of the device’s output is very poor. The dupont wire assembly of many of the components means that the device is even less reliable, with a high possibility of things to fail or get disconnected. </p>
+				</div>
+
+
+			</div>
+			<div class="descbox">
+				<div class="textbox">
+					<h3>future directions</h3>
+				  <p>(θ,z) is an experimental magnetic tape loop player designed for freeform exploration through dual-axis control. In a departure from traditional tape players and recorders, of which virtually all are linear, this device enables users to navigate bidirectionally across both rotational (θ) and perpendicular (z) axes of a loop of 2” tape. </p>
+					<p>This allows recording and manupulation of sound through uniquely non-linear, intuitive methods using a joystick and single rec/play switch. Computer controlled motors and actuators give the user tactile access to the multidimensional possibilities of magnetic recording, which is territory typically reserved for the black box processes of hard drives and floppy disks.</p>
+			  </div>
+				<img src="assets/mag dither.png" width="50%" alt="">
+
+			</div>
 		</div>
-<img src="assets/sketch2.png" width="200">
-		  	<img src="assets/sketch1.png" width="200">
-		 	<h3>whats next</h3>
+	
+		<img src="assets/sketch1.png" width="200">
+ 	  	<h3>whats next</h3>
             
         <p>&nbsp;</p>
            

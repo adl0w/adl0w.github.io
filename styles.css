@@ -203,27 +203,33 @@ td p img {
 #release section {
     display: flex;
 }
-.container #hardware #descbox {
+.container #hardware .descbox {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 2vw;
 }
-#hardware #descbox img {
+#hardware .descbox img {
     border: 4px double black;
-    margin-left: 8vw;
-	flex-basis: 40%
+    flex-basis: 40%
 }
-#hardware #descbox #textbox {
+#hardware .descbox .textbox {
     display: flex;
     flex-direction: column;
     flex-basis: auto;
-	width: 45%;
-    padding-left: 1vw;
+    width: 36%;
+    padding-left: 2vw;
 }
+.container #hardware #pager {
+    padding-left: 9vw;
+}
+
 #hardware h2 a {
 }
-#descbox #textbox p {
-    margin-top: auto;
-    margin-right: auto;
+.descbox .textbox p {
+    font-size: 12px;
+    margin-bottom: 1vw;
+}
+#pager .descbox img {
     margin-left: 1vw;
-    margin-bottom: auto;
+
 }
