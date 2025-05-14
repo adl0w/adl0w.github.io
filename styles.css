@@ -203,3 +203,27 @@ td p img {
 #release section {
     display: flex;
 }
+.container #hardware #descbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+#hardware #descbox img {
+    border: 4px double black;
+    margin-left: 8vw;
+	flex-basis: 40%
+}
+#hardware #descbox #textbox {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+	width: 45%;
+    padding-left: 1vw;
+}
+#hardware h2 a {
+}
+#descbox #textbox p {
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: 1vw;
+    margin-bottom: auto;
+}
