@@ -233,3 +233,9 @@ td p img {
     margin-left: 1vw;
 
 }
+#pager .imgbox {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 58%;
+    align-items: center;
+}
