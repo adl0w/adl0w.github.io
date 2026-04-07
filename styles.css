@@ -3,8 +3,7 @@ body {
     background-color: #fff;
     color: #000;
     text-align: left;
-    margin-right: 1vw;
-    margin-left: 2vw;
+    margin: 1vw 2vw;
     padding: 0;
     ;
     margin-top: 1vw;
@@ -13,33 +12,12 @@ body {
 .container {
     margin: 0 auto;
     padding: 1rem;
-	
-
 }
 
-
+/* NAVIGATION */
 nav ul {
     list-style: none;
     padding: 0;
-}
-
-header {
-    border-bottom: 2px dashed black;
-  
-    margin-bottom: 20px;
-    margin-top: -15px;
-	background: white;
-	margin-left: 1rem;
-    
-
-}
-
-
-header h1 #image {
-    padding-left: 2vw;
-    position: absolute;
-    right: 2vw;
-    background: white;
 }
 
 nav ul li {
@@ -57,43 +35,42 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-	text-decoration: none;
-	padding: 0.5vw;
     border: 2px solid black;
-    border-radius: 3px;
-
 }
 
+/* HEADER */
+header {
+    border-bottom: 2px dashed black;
+    margin-bottom: 20px;
+    margin-top: -15px;
+    background: white;
+    margin-left: 1rem;
+}
+
+header h1 #image {
+    padding-left: 2vw;
+    position: absolute;
+    right: 2vw;
+    background: white;
+}
+
+/* SECTIONS */
 section {
-    margin-bottom: 1vw auto;
-    padding-right: 7vw;
-    padding-left: 3vw;
-    padding-bottom: 3vw;
+    margin: 0 auto 1vw auto;
+    padding: 3vw;
     background: white;
     flex-wrap: wrap;
-    margin-left: 1vw;
-    margin-right: 6vw;
 }
+
 #main section {
     display: flex;
 }
 
-.container  .subhead {
-    width: 46%;
-    padding-left: 1rem;
-    align-self: flex-end;
-    padding-bottom: 0.2rem;
-   
-
-}
-
-
+/* TABLES */
 table {
     width: 100%;
     border-style: double;
-    margin-left: 5rem;
-    margin-bottom: 1rem;
-    margin-right: -123px;
+    margin: 1rem auto;
 }
 
 table, th, td {
@@ -109,141 +86,171 @@ th {
     background-color: #000000;
     color: white;
 }
-a:link {
+
+/* LINKS */
+a:link, a:visited {
     text-decoration: none;
-	color: black;
-	font-weight: bold;
+    color: black;
+    font-weight: bold;
 }
 
-a:visited {
-	text-decoration: none;
-	color: black;
+a:hover, a:active {
+    text-decoration: underline;
 }
 
-a:hover {
-	text-decoration: underline;
-}
-
-a:active {
-	text-decoration: underline;
-}
-
+/* FOOTER */
 footer {
     margin-top: 20px;
     border-top: 2px solid black;
     padding-top: 10px;
 }
-.image {
-    display: inline;
 
-}
-.container h3 {
-    border-bottom: 1px solid black;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-
-
-}
-
-.container #about{
+/* ABOUT SECTION */
+.container #about {
     display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
 }
+
 .break {
-	flex-basis: 100%;
-	width: 100%;
-	height: 0;
+    flex-basis: 100%;
+    width: 100%;
+    height: 0;
 }
-.container #about p{
-    display: inline;
+
+.container #about p {
     flex-basis: 80%;
-	
 }
-.container #about img{
+
+.container #about img {
     border: 3px double black;
     padding: 3px;
     margin-left: auto;
-	
 }
-nav ul li {
-}
-.heading {
 
-}
-table tr td {
-    vertical-align: top;
-
-
-}
-td p img {
-}
-#flyers tr td img {
-    width: 98%;
-}
-#flyers table tr {
-    display: flex;
-    align-items: center;
-}
-.container #release table {
-    width: 31vw;
-    margin-right: 2vw;
-}
-.release {
-}
+/* RELEASE SECTION */
 .container #release {
     display: flex;
     flex-wrap: wrap;
 }
+
+.container #release table {
+    width: 31vw;
+    margin-right: 2vw;
+}
+
 .container #release h3 {
     width: 100%;
 }
 
-
-#release section {
-    display: flex;
-}
+/* HARDWARE SECTION */
 .container #hardware .descbox {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 2vw;
 }
+
 #hardware .descbox img {
     border: 4px double black;
-    flex-basis: 40%
+    flex-basis: 30%;
+    height: auto;
 }
+
 #hardware .descbox .textbox {
     display: flex;
     flex-direction: column;
-    flex-basis: auto;
-    width: 36%;
+    width: 34%;
     padding-left: 2vw;
 }
-.container #hardware #pager {
-    padding-left: 9vw;
-}
 
-#hardware h2 a {
-}
 .descbox .textbox p {
-    font-size: 12px;
+    font-size: 17px;
     margin-bottom: 1vw;
 }
-#pager .descbox img {
-    margin-left: 1vw;
 
-}
-#pager .imgbox {
-    display: flex;
-    flex-direction: row;
+/* MOBILE RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
 
+    body {
+        margin: 2vw;
+        font-size: 16px;
+    }
 
-    flex-basis: 50
-&;
-    flex-wrap: wrap;
-    flex-basis: 50%;
-}
-.descbox .imgbox img {
-    margin: 1vw;
+    header {
+        margin-left: 0;
+        text-align: center;
+    }
 
+    header h1 #image {
+        position: static;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 5vw 3vw;
+        margin: 2vw 0;
+    }
+
+    table {
+        font-size: 14px;
+        margin: 1rem 0;
+    }
+
+    .container #about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container #about p {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .container #about img {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .container #release {
+        flex-direction: column;
+    }
+
+    .container #release table {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    #hardware .descbox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hardware .descbox img {
+        width: 90%;
+        flex-basis: auto;
+    }
+
+    #hardware .descbox .textbox {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1rem;
+    }
 }
