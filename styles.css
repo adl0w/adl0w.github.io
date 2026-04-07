@@ -167,6 +167,39 @@ footer {
     margin-bottom: 1vw;
 }
 
+/* FLYERS SECTION */
+#flyers .flyer-table {
+
+}
+
+#flyers .flyer-table td {
+    width: 33.333%;
+    padding: 0;
+    vertical-align: top;
+}
+
+#flyers .flyer-table img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+    background: white;
+}
+
+#flyers td.flyer-copy {
+    background: black;
+    color: white;
+    padding: 0.3rem;
+}
+
+#flyers td.flyer-copy p {
+    margin: 0;
+}
+tr td img {
+
+}
+
+
 /* MOBILE RESPONSIVE ADJUSTMENTS */
 @media (max-width: 768px) {
 
@@ -174,6 +207,16 @@ footer {
         margin: 2vw;
         font-size: 16px;
     }
+table tr th {
+
+}
+.container #release {
+    display: flex;
+    align-self: center;
+
+}
+
+
 
     header {
         margin-left: 0;
@@ -246,6 +289,18 @@ footer {
     #hardware .descbox .textbox {
         width: 100%;
         padding-left: 0;
+        margin-top: 1rem;
+    }
+
+    #flyers .flyer-table,
+    #flyers .flyer-table tbody,
+    #flyers .flyer-table tr,
+    #flyers .flyer-table td {
+        display: block;
+        width: 100%;
+    }
+
+    #flyers .flyer-table {
         margin-top: 1rem;
     }
 
