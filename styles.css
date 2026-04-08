@@ -147,20 +147,26 @@ footer {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 2vw;
+    /* [disabled]flex-grow: 12rem; */
 }
 
 #hardware .descbox img {
     border: 4px double black;
     flex-basis: 30%;
     height: auto;
+    margin: auto;
+    /* [disabled]size: auto; */
 }
 
 #hardware .descbox .textbox {
     display: flex;
     flex-direction: column;
-    width: 34%;
+    width: 50%;
     padding-left: 2vw;
 }
+.descbox .imgbox img {
+}
+
 
 .descbox .textbox p {
     font-size: 17px;
@@ -198,6 +204,24 @@ footer {
 tr td img {
 
 }
+.descbox .imgbox img {
+    padding: 10px;
+    width: 30vw;
+}
+#pager .descbox img {
+
+}
+#pager .descbox .thetazimg {
+    left: auto;
+
+
+}
+.descbox {
+}
+
+
+
+
 
 
 /* MOBILE RESPONSIVE ADJUSTMENTS */
